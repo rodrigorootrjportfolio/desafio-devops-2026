@@ -53,7 +53,7 @@ jobs:
             echo "DOCKER_LATEST=true" >> "$GITHUB_ENV"
 
           elif [[ "${GITHUB_REF}" == "refs/heads/dev]]; then
-            echo "ENV_NAME=dev">> "$GITHUB_ENV"
+            echo "ENV_NAME=dev" >> "$GITHUB_ENV"
             echo "DOCKER_TAG=dev" >> "$GITHUB_ENV"
             echo "DOCKER_LATEST=true" >> "$GITHUB_ENV"
 
