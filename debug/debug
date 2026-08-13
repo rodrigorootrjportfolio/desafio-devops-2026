@@ -1,0 +1,6 @@
+git push --set-upstream origin development
+ERROR: Permission to rodrigorootrjportifolio/desafio-2026-entrevista.git denied to rodrigorootrj.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
