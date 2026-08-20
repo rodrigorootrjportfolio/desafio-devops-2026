@@ -46,7 +46,7 @@ jobs:
 
 
   deploy:
-    uses: https://github.com/rodrigorootrjportfolio/pipelines/blob/main/github/workflows/docker-hub-registry.yaml@main
+    uses: rodrigorootrjportfolio/pipelines/blob/main/github/workflows/docker-hub-registry.yaml@main
     with:
       ENVIRONMENT: 'prod'
       REGISTRY: ${{ vars.registry }}
@@ -56,8 +56,6 @@ jobs:
       RELEASE: ${{ vars.RELEASE }}
       CODE_ENV: ${{ vars.CODE_ENV }}
       FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT: ${{ vars.FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT }}
-
-
     secrets:
       REGISTRY_USERNAME: ${{ secrets.GITHUB_TOKEN }}
       
