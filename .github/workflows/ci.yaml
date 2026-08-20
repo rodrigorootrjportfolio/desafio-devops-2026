@@ -46,7 +46,7 @@ jobs:
 
 
   build-push:
-    uses: rodrigorootrjportfolio/pipelines/github/workflows/teste.yaml@main
+    uses: rodrigorootrjportfolio/pipelines/.github/workflows/teste.yaml@main
     with:
       ENVIRONMENT: 'prod' 
       REGISTRY: ${{ vars.registry }}
