@@ -21,16 +21,16 @@ jobs:
     environment:
       name: ${{ github.ref_name == 'dev' && 'dev'|| github.ref_name == 'hml' && 'hml' || github.ref_name == 'prod' && 'prod' }}
 
-    steps:
-      - name: Check DockerHub Username
-        if: ${{ env.DOCKERHUB_USERNAME != '' }}
-        run: |
-          echo "DOCKERHUB_USERNAME possui conteúdo"
+    # steps:
+    #   - name: Check DockerHub Username
+    #     if: ${{ env.DOCKERHUB_USERNAME != '' }}
+    #     run: |
+    #       echo "DOCKERHUB_USERNAME possui conteúdo"
 
-      - name: Check Flask Cache Timeout
-        if: ${{ env.FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT != '' }}
-        run: |
-          echo "FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT possui conteúdo"
+    #   - name: Check Flask Cache Timeout
+    #     if: ${{ env.FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT != '' }}
+    #     run: |
+    #       echo "FLASK_LOCAL_CACHE_DEFAULT_TIMEOUT possui conteúdo"
 
 
   build-and-push:
