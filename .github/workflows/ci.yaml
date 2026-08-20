@@ -48,7 +48,7 @@ jobs:
   deploy:  
     uses: rodrigorootrjportfolio/pipelines/.github/workflows/docker-hub-registry.yaml@main
     with:
-      ENVIRONMENT: 'prod'
+      ENVIRONMENT: 'prod' 
       REGISTRY: ${{ vars.registry }}
       DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ vars.DOCKERHUB_TOKEN }}
