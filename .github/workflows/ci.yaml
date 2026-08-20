@@ -46,7 +46,7 @@ jobs:
 
 
   deploy:  
-    uses: rodrigorootrjportfolio/pipelines/.github/workflows/docker-hub-registry.yaml@main
+    uses: rodrigorootrjportfolio/pipelines/.github/workflows/teste.yaml@main
     with:
       ENVIRONMENT: 'prod' 
       REGISTRY: ${{ vars.registry }}
