@@ -46,7 +46,7 @@ jobs:
 
 
   deploy:
-    uses: rodrigorootrjportfolio/pipelines/.github/workflows/docker-build-push.yml@main
+    uses: rodrigorootrjportfolio/pipelines/.github/workflows/docker-build-push.yaml@main
     with:
       ENVIRONMENT: 'prod'
       REGISTRY: ${{ vars.registry }}
