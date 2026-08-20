@@ -50,8 +50,8 @@ jobs:
     with:
       ENVIRONMENT: 'prod'
       REGISTRY: ${{ vars.registry }}
-      DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME
-      DOCKERHUB_TOKEN: ${{ vars.DOCKERHUB_TOKEN
+      DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ vars.DOCKERHUB_TOKEN }}
       DOCKER_PROJETO: ${{ vars.DOCKER_PROJETO }}
       RELEASE: ${{ vars.RELEASE }}
       CODE_ENV: ${{ vars.CODE_ENV }}
